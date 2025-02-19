@@ -1,7 +1,7 @@
 // server.js
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // In-memory chat history and pending response storage.
 // (This state is ephemeral and will be lost if the server is restarted.)
@@ -63,8 +63,6 @@ app.get('/api/ai/response', (req, res) => {
     res.json({ answer: null });
   }
 });
-
-const port = process.env.PORT || 3000;
 
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server listening on port ${port}`);
