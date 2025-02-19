@@ -1,6 +1,23 @@
 {
   "scripts": {
     "start": "node server.js"
+  },
+  "name": "ai-agent-chat-test",
+  "version": "1.0.0",
+  "description": "AI Agent Chat Test",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alishahriyari/ai-agent-chat-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alishahriyari/ai-agent-chat-test/issues"
+  },
+  "homepage": "https://github.com/alishahriyari/ai-agent-chat-test#readme",
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }
-
