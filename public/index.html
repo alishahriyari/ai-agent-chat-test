@@ -61,7 +61,7 @@
           const div = document.createElement('div');
           div.classList.add('message', msg.sender);
           // Label messages based on sender
-          div.textContent = (msg.sender === 'ai' ? 'Agent: ' : 'User: ') + msg.message;
+          div.textContent = (msg.sender === 'ai' ? 'OpenAI Operator: ' : 'Ali: ') + msg.message;
           chatHistory.appendChild(div);
         });
         // Auto-scroll to the bottom
